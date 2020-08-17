@@ -1,0 +1,171 @@
+html
+    head
+        meta(http-equiv="Content-Type", content="text/html;charset=UTF-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        title  Bootstrap demo
+        block css
+            link(rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous")
+            link(rel="stylesheet", href="css/style.css")
+            link(rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css")
+        block icon
+            link(href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2&display=swap" rel="stylesheet")
+            linh(href="https://fonts.googleapis.com/css2?family=Jost:wght@300&display=swap" rel="stylesheet")
+            link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css")
+    body
+        - const ar1 = ["8 homepage variations","30+ support pages including complete shop, account and blog sections","10+ navigation and 4 footer variations","4 mega menu dropdown variations","10 modal windows for the most common use-cases"]
+        - const ar2 = ["Browsersync live reload for easier prototyping","HTML partials for rapid development","Precompiled files for those who like to keep things simple","Clean code that stays true to Bootstrap","Premium plugins included"]
+        - const ar3 = ["Fully responsive on modern browsers","Modern and user-friendly design","Built by professionals with more than 5 years of experience","Free updates for lifetime","Free support by e-mail"]
+        block header
+            include ../partials/header
+        block main
+            section.bg-light.py-5
+                .container
+                    .row.align-items-center.mb-3
+                        h2.col-12.text-center.mb-3 Homepages
+                        p.col-12.text-center 8 homepage variations including a sample landing page with anchor navigation.
+                    .row
+                        .col-12.col-md-4
+                            a(href="#").card.mb-5.bg-transparent.text-body.border-0
+                                img(src="https://yevgenysim.github.io/shopper/assets/img/screenshots/home/index-default.png", alt="").card-img-top.shadow
+                                .card-body.text-center
+                                    strong Default
+                        .col-12.col-md-4
+                            a(href="#").card.mb-5.bg-transparent.text-body.border-0
+                                img(src="https://yevgenysim.github.io/shopper/assets/img/screenshots/home/index-classic.png", alt="").card-img-top.shadow
+                                .card-body.text-center
+                                    strong Classic
+                        .col-12.col-md-4
+                            a(href="#").card.mb-5.bg-transparent.text-body.border-0
+                                img(src="https://yevgenysim.github.io/shopper/assets/img/screenshots/home/index-fashion.png", alt="").card-img-top.shadow
+                                .card-body.text-center
+                                    strong Fashion
+                        .col-12.col-md-4
+                            a(href="#").card.mb-5.bg-transparent.text-body.border-0
+                                img(src="https://yevgenysim.github.io/shopper/assets/img/screenshots/home/index-boxed.png", alt="").card-img-top.shadow
+                                .card-body.text-center
+                                    strong Boxes
+                        .col-12.col-md-4
+                            a(href="#").card.mb-5.bg-transparent.text-body.border-0
+                                img(src="https://yevgenysim.github.io/shopper/assets/img/screenshots/home/index-simple.png", alt="").card-img-top.shadow
+                                .card-body.text-center
+                                    strong Simple
+                        .col-12.col-md-4
+                            a(href="#").card.mb-5.bg-transparent.text-body.border-0
+                                img(src="https://yevgenysim.github.io/shopper/assets/img/screenshots/home/index-asymmetric.png", alt="").card-img-top.shadow
+                                .card-body.text-center
+                                    strong Asymmetric
+                        .col-12.col-md-4
+                            a(href="#").card.mb-5.bg-transparent.text-body.border-0
+                                img(src="https://yevgenysim.github.io/shopper/assets/img/screenshots/home/index-sidenav.png", alt="").card-img-top.shadow
+                                .card-body.text-center
+                                    strong Sidenav
+                        .col-12.col-md-4
+                            a(href="#").card.mb-5.bg-transparent.text-body.border-0
+                                img(src="https://yevgenysim.github.io/shopper/assets/img/screenshots/home/index-landing.png", alt="").card-img-top.shadow
+                                .card-body.text-center
+                                    strong Landing
+                        .col-12.col-md-4
+                            a(href="#").card.mb-5.bg-transparent.text-body.border-0
+                                img(src="https://yevgenysim.github.io/shopper/assets/img/screenshots/home/index-boxed.png", alt="").card-img-top.shadow
+                                .card-body.text-center
+                                    strong Other
+            section.bg-dark
+                .container
+                        .row
+                            h2.col-12.text-center.my-5.text-white Shop & Account Pages
+                        div.gallery.js-flickity
+                            div.gallery-cell
+                                img(src="../assets/images/a1.png" alt="orange tree")
+                            div.gallery-cell
+                                img(src="../assets/images/a2.jpg" alt="orange tree")
+                            div.gallery-cell      
+                                img(src="../assets/images/a3.jpg" alt="orange tree")
+                            div.gallery-cell
+                                img(src="../assets/images/a4.jpg" alt="orange tree")
+                            div.gallery-cell
+                                img(src="../assets/images/a1.png" alt="orange tree")
+                            div.gallery-cell
+                                img(src="../assets/images/a2.jpg" alt="orange tree")
+                            div.gallery-cell
+                                img(src="../assets/images/a3.jpg" alt="orange tree")
+                            div.gallery-cell
+                                img(src="../assets/images/a4.jpg" alt="orange tree")
+                            div.gallery-cell
+                                img(src="../assets/images/a1.png" alt="orange tree")
+            section.py-5
+                .container
+                    .row
+                        .col-12.text-center
+                            h2.my-5 Mega Menu Dropdowns
+                    .row
+                        .col-12.col-md-6.mb-3
+                            img.img-fluid.border.shadow(src="https://yevgenysim.github.io/shopper/assets/img/screenshots/menu/menu-1.jpg", alt="")
+                        .col-12.col-md-6.mb-3
+                            img.img-fluid.border.shadow(src="https://yevgenysim.github.io/shopper/assets/img/screenshots/menu/menu-2.jpg", alt="")
+                        .col-12.col-md-5.mb-3
+                            img.img-fluid.border.shadow(src="https://yevgenysim.github.io/shopper/assets/img/screenshots/menu/menu-3.jpg", alt="")
+                        .col-12.col-md-7.mb-3      
+                            img.img-fluid.border.shadow(src="https://yevgenysim.github.io/shopper/assets/img/screenshots/menu/menu-4.jpg", alt="") 
+            section.py-5.bg-light
+                .container
+                    .row.justify-content-center
+                        .col-12.col-md-10.col-lg-8.col-xl-6.text-center
+                            h2.mb-3 Key Features
+                            p.mb-5.text-secondary Something that makes Shopper stand out against competitors.
+                    .row.mb-5
+                        .col-12.col-md-6.col-lg-4                       
+                            .card.mb-3
+                                .card-body.d-flex.align-items-center
+                                    img(src="https://yevgenysim.github.io/shopper/assets/img/icons/brands/bootstrap.svg", alt="")
+                                    strong.ml-3  Built with Bootstrap
+                        .col-12.col-md-6.col-lg-4
+                            .card.mb-3
+                                .card-body.d-flex.align-items-center 
+                                    img(src="https://yevgenysim.github.io/shopper/assets/img/icons/brands/figma.svg", alt="")
+                                    strong.ml-3 Figma design files included
+                        .col-12.col-md-6.col-lg-4
+                            .card.mb-3
+                                .card-body.d-flex.align-items-center 
+                                    img(src="https://yevgenysim.github.io/shopper/assets/img/icons/brands/sass.svg", alt="")
+                                    strong.ml-3 Easy customization with SASS variables
+                        .col-12.col-md-6.col-lg-4
+                            .card.mb-3
+                                .card-body.d-flex.align-items-center 
+                                    img(src="https://yevgenysim.github.io/shopper/assets/img/icons/brands/gulp.svg", alt="")
+                                    strong.ml-3 Gulp tooling to automate the workflow
+                        .col-12.col-md-6.col-lg-4
+                            .card.mb-3
+                                .card-body.d-flex.align-items-center 
+                                    img(src="https://yevgenysim.github.io/shopper/assets/img/icons/brands/w3c.svg", alt="")
+                                    strong.ml-3 W3C valid HTML
+                        .col-12.col-md-6.col-lg-4
+                            .card.mb-3
+                                .card-body.d-flex.align-items-center 
+                                    img(src="https://yevgenysim.github.io/shopper/assets/img/icons/brands/doc.svg", alt="")
+                                    strong.ml-3 Detailed documentation
+                    .row.mb-5.justify-content-between
+                        .col-12.col-md-3
+                            ul.list-unstyled
+                                for item in ar1
+                                    li.mb-3 
+                                        i(class="fas fa-star mr-3 text-warning")
+                                        = item
+                        .col-12.col-md-3
+                            ul.list-unstyled
+                                for item in ar2
+                                    li.mb-3
+                                        i(class="fas fa-star mr-3 text-warning")
+                                        = item
+                        .col-12.col-md-3
+                            ul.list-unstyled
+                                for item in ar3
+                                    li.mb-3 
+                                        i(class="fas fa-star mr-3 text-warning")
+                                        = item
+        block footer
+            include ../partials/footer
+        block bootstrapjs
+            script(src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js")
+            script(src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous")
+            script(src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous")
+            script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous")

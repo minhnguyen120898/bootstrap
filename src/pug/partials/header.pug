@@ -1,0 +1,88 @@
+- const arr = ["Default","Classic","Fashion","Boxed","Simple","Asymmetric","Sidenav","Landing"]
+mixin headerlist(name)
+    li.nav-item.dropdown.text-dark
+        a.text-secondary(href="#" data-toggle="dropdown" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false").nav-link.lead= name
+        .dropdown-menu
+            .card.card-lg.border-0
+                .card-body
+                    ul.list-unstyled.font-size-sm
+                        each items in arr                                    
+                            li.list-styled-item
+                                a(href="#").text-dark= items
+header
+    nav.navbar.navbar-expand-lg.navbar-light.bg-white
+        .container.pt-3.pb-5   
+            h1.my-0
+                a(href="#").navbar-brand.text-dark Shopper.
+            button(type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation").navbar-toggler   
+                span.navbar-toggler-icon
+            .collapse.navbar-collapse#navbarCollapse
+                ul.navbar-nav.mx-auto
+                    +headerlist("Home").act
+                    +headerlist("Catalog")
+                    +headerlist("Shop")
+                    +headerlist("Pages")
+                    +headerlist("Blog")
+                    +headerlist("Docs")
+                a(href="#").btn.btn-dark.btn-sm.w-xl-auto.my-xl-n2 Buy Now for $49                                    
+    section(class="pt-9 pt-md-12 pb-12 overflow-hidden")
+        .container.border-bottom.py-3    
+            .row.align-items-center    
+                div(class="col-12 col-md-5 col-lg-6 col-xl-7 order-md-2")
+                    div(id="carouselExampleIndicators" class="carousel slide" data-ride="carousel")
+                        ol.carousel-indicators
+                            li(data-target="#carouselExampleIndicators" data-slide-to="0" class="active")
+                            li(data-target="#carouselExampleIndicators" data-slide-to="1")
+                            li(data-target="#carouselExampleIndicators" data-slide-to="2")
+                        .carousel-inner
+                            .carousel-item.active
+                                img(src="https://yevgenysim.github.io/shopper/assets/img/devices/devices-1.png", alt="" class="img-fluid minw-md-200 minw-lg-125 mb-9 mb-md-0")
+                            .carousel-item
+                                img(src="https://yevgenysim.github.io/shopper/assets/img/devices/devices-1.png", alt="" class="img-fluid minw-md-200 minw-lg-125 mb-9 mb-md-0")
+                            .carousel-item
+                                img(src="https://yevgenysim.github.io/shopper/assets/img/devices/devices-1.png", alt="" class="img-fluid minw-md-200 minw-lg-125 mb-9 mb-md-0")
+                        
+                div(class="col-12 col-md-7 col-lg-6 col-xl-5 order-md-1")
+                    h2.mb-4.
+                        Flexible E-Commerce Bootstrap Template
+                    p.mb-5.text-secondary.
+                        Shopper is a beautiful, simple and flexible e-commerce template built on top of Bootstrap. 
+                        It includes dozens of components and pages you can use “as is” or customize to build exactly what you need.
+                    a(class="btn btn-danger border-none" href="#pages" data-toggle="smooth-scroll").
+                        Find Out More
+    section.py-5
+        .container
+            .row
+                .col-12.col-md-6.col-lg-3
+                    .d-flex.mb-5.mb-lg-0
+                        i(class="fas fa-home text-danger mt-1")
+                        .ml-3
+                            h5.mb-2.
+                                8 homepage variations        
+                            p.mb-0.text-muted.
+                                Including a landing page with an anchor navigation.
+                .col-12.col-md-6.col-lg-3
+                    .d-flex.mb-5.mb-lg-0
+                        i(class="far fa-file-alt text-danger mt-1")
+                        .ml-3
+                            h5.mb-2.
+                                8 homepage variations        
+                            p.mb-0.text-muted.
+                                Including a landing page with an anchor navigation.
+                .col-12.col-md-6.col-lg-3
+                    .d-flex.mb-5.mb-lg-0
+                        i(class="fas fa-bars text-danger mt-1")
+                        .ml-3
+                            h5.mb-2.
+                                8 homepage variations        
+                            p.mb-0.text-muted.
+                                Including a landing page with an anchor navigation.
+                .col-12.col-md-6.col-lg-3
+                    .d-flex.mb-5.mb-lg-0
+                        i(class="fab fa-product-hunt text-danger mt-1")
+                        .ml-3
+                            h5.mb-2.
+                                8 homepage variations        
+                            p.mb-0.text-muted.
+                                Including a landing page with an anchor navigation.
+                
