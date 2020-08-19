@@ -5,9 +5,9 @@ mixin headerlist(name)
         .dropdown-menu
             .card.card-lg.border-0
                 .card-body
-                    ul.list-unstyled.font-size-sm
+                    ul.list-unstyled.list-group
                         each items in arr                                    
-                            li.list-styled-item
+                            li.list-group-item.border-0
                                 a(href="#").text-dark= items
 header
     nav.navbar.navbar-expand-lg.navbar-light.bg-white

@@ -70,28 +70,25 @@ html
                                 .card-body.text-center
                                     strong Other
             section.bg-dark
-                .container
+                .container.pb-5
                         .row
                             h2.col-12.text-center.my-5.text-white Shop & Account Pages
-                        div.gallery.js-flickity
-                            div.gallery-cell
-                                img(src="../assets/images/a1.png" alt="orange tree")
-                            div.gallery-cell
-                                img(src="../assets/images/a2.jpg" alt="orange tree")
-                            div.gallery-cell      
-                                img(src="../assets/images/a3.jpg" alt="orange tree")
-                            div.gallery-cell
-                                img(src="../assets/images/a4.jpg" alt="orange tree")
-                            div.gallery-cell
-                                img(src="../assets/images/a1.png" alt="orange tree")
-                            div.gallery-cell
-                                img(src="../assets/images/a2.jpg" alt="orange tree")
-                            div.gallery-cell
-                                img(src="../assets/images/a3.jpg" alt="orange tree")
-                            div.gallery-cell
-                                img(src="../assets/images/a4.jpg" alt="orange tree")
-                            div.gallery-cell
-                                img(src="../assets/images/a1.png" alt="orange tree")
+                        .row.justify-content-center
+                            .col-12.col-md-8.col-lg-10
+                                div(id="carouselExampleControls" class="carousel slide" data-ride="carousel")
+                                    .carousel-inner
+                                        - const listImg = ["../assets/images/a2.jpg","../assets/images/a3.jpg","../assets/images/a4.jpg","../assets/images/a1.png","../assets/images/a2.jpg","../assets/images/a3.jpg","../assets/images/a4.jpg"]
+                                        .carousel-item.active
+                                            img(src="../assets/images/a1.png" alt="orange tree").d-block.w-100
+                                        for item in listImg
+                                            .carousel-item
+                                                img(src=item, alt="a").d-block.w-100
+                                        a(href="#carouselExampleControls" data-slide="prev").carousel-control-prev
+                                            span.carousel-control-prev-icon(aria-hidden="true")
+                                            span.sr-only Previous
+                                        a(href="#carouselExampleControls" data-slide="next").carousel-control-next
+                                            span.carousel-control-next-icon(aria-hidden="true")
+                                            span.sr-only Next    
             section.py-5
                 .container
                     .row
